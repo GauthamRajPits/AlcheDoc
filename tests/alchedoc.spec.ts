@@ -12,13 +12,20 @@ test.describe('Alchedoc Login page Tests',()=>
         expect(currentTitle).toBe(testData.testCases.titleCheck);
     })
 
-    test('CheckingLogin functionality',async({page})=>
+    test('Checking Login functionality',async({page})=>
     {
         const homePage = new Homepage(page);
         await homePage.navigate();
         await homePage.login(testData.testCases.emailForLogin,testData.testCases.passwordForLogin) 
         const currentTitle = await homePage.getPageTitle();
         expect(currentTitle).toBe(testData.testCases.DashBoardTitle);
+    })
+
+    test('Checking Dashboard displayed',async({page})=>
+    {
+        const homePage = new Homepage(page);
+        await homePage.navigate();
+        await homePage.login(testData.testCases.emailForLogin,testData.testCases.passwordForLogin) 
         
     })
 })
