@@ -21,7 +21,7 @@ test.describe('Alchedoc Login page Tests',()=>
         expect(currentTitle).toBe(testData.testCases.DashBoardTitle);
     })
 
-    test('CheckingDashboard displayed',async({page})=>
+    test('Checking Dashboard displayed',async({page})=>
     {
         const homePage = new Homepage(page);
         await homePage.navigate();
