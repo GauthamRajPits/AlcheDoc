@@ -4,6 +4,7 @@
     "titleCheck": "AlcheDoc AI: AI powered",
     "emailForLogin" : "gautham.rr@pitsolutions.com",
     "passwordForLogin" : "Temp@123",
-    "DashBoardTitle" : "AlcheDoc AI: Admin Dashboard"
+    "DashBoardTitle" : "AlcheDoc AI: Admin Dashboard",
+    "" : ""
   }
 }
